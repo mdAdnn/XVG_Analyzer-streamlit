@@ -92,7 +92,7 @@ def y_limits(arrs, frac=0.1, min_pad=0.05):
 
 # -------------------- Streamlit UI --------------------
 st.set_page_config(page_title="XVG Analyzer", page_icon="📈", layout="wide")
-st.title("📈 XVG Analyzer — WT vs Multiple Mutants (Auto-Detect Mode)")
+st.title("📈 XVG Analyzer")
 st.caption("Auto-detects RMSD, RMSF, SASA, RoG, Pressure, Temperature, etc. and compares WT vs all mutants.")
 
 st.markdown("### 1️⃣ Select Input Files and Output Folder")
@@ -247,8 +247,6 @@ st.markdown(
     <hr/>
     <small>
     • WT solid line, mutants dashed.<br>
-    • Each mutant has its own selectable color.<br>
-    • X-axis starts at 0, no gaps.<br>
     • All detected properties displayed and saved automatically.<br>
     </small>
     """,
